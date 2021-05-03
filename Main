@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+inline float area(float r)
+{
+return 3.14*r*r; }
+inline float volume(float h, float r)
+{
+    return area(r)*h;
+}
+int main() {
+float r,h;
+cout<<"Enter radius of a circle: "; cin>>r;
+cout<<"Enter cylinder h: ";
+cin>>h;
+cout<<"Area of the circle is: "<<area(r)<<endl;
+cout<<"Volume of a cylinder is: "<<volume(h,r); return 0;
